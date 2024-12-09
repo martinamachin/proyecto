@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Qué leo?</title>
-    <script src="proyecto.js"></script>
+
 </head>
 <body>
 
@@ -66,9 +66,11 @@
             <p>&nbsp</p>
             <h2 id="titulo">Busca reseñas</h2>
             <br>
-            <input type="search" name="busca reseñas" placeholder="Buscar libro, género, autor...">
+            <input id="search" type="search" name="busca reseñas" placeholder="Buscar libro, género, autor...">
             <p>&nbsp</p>
             <p>Aqui puedes buscar distintas reseñas sobre libros que quieras leer. Puedes buscar el nombre del libro que te interese. También puedes buscar reseñas de libros de un autor de tu agrado o que te gustaría comenzar a leer. Otra opción es buscar un género literario que te interese y te aparecerán distintas opciones de libros con sus respectivas reseñas.</p>
+            <section class="contenedor" id="books">
+            </section>
             <p>&nbsp</p>
             <h3>Los más destacados</h3>
             <p>Estas son las reseñas más populares de la última semana, pueden ser de tu interés</p>
@@ -150,6 +152,6 @@
 
     </main>
 
-
+    <script src="proyecto.js"></script>
 </body>
 </html>
