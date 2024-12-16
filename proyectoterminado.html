@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="estiloproyecto.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué leo?</title>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#INICIO">INICIO</a></li>
+                <li><a href="#BUSCARESEÑAS">BUSCA RESEÑAS</a></li>
+                <li><a href="#PUBLICATURESEÑA">PUBLICA TU RESEÑA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="item" id="INICIO">
+            <br><br>
+            <h1>¿Qué leo?</h1><br>
+            <p id="intro">El fin de esta página web es compartir reseñas de libros que nuestros usuarios hayan leído. Así establecemos una relación bilateral, donde los usuarios pueden leer reseñas ya publicadas de libros de su interés, y a su vez publicar propias.</p>
+
+            <form class="usuario">
+
+                <p>Inicia sesión para que tu experiencia sea más personalizada</p>
+                <label for="nombre">Usuario:</label>
+                <input type="text"  name="nombre" required>
+                <label for="email">Contraseña:</label>
+                <input type="email"  name="email" required>
+                <button type="submit">Iniciar Sesión</button><br>
+                <p>Si no tienes una cuenta:</p>
+                <button type="submit">Regístrate</button><br>
+                
+            </form>
+
+            <div>
+
+                <div class="c1">
+                    <p>Puedes buscar reseñas de libros de tu interés, para saber que opinan de ellos personas que los han leído</p>
+                </div>
+                <br>
+                <div class="c2">
+                    <p>Puedes publicar tus propias reseñas y dar tu opinión sobre libros que has leído</p>
+                </div>
+                <br>
+                <div class="c3">
+                    <p>Puedes hacer amigos con gustos literarios similares a los tuyos</p>
+                </div>
+                <br>
+                <div class="c4">
+                    <p>Puedes seguir a los creadores de reseñas que más te gusten para no perderte de su contenido</p>
+                </div>
+
+            </div>
+
+        </div>
+        <br><br><br>
+        <div class="item" id="BUSCARESEÑAS">
+
+            <p>&nbsp</p>
+            <p>&nbsp</p>
+            <h1 id="titulo">Busca reseñas</h1>
+            <br>
+            <input id="search" type="search" name="busca reseñas" placeholder="Buscar libro, género, autor...">
+            <p>&nbsp</p>
+            <p class="texto-busca">Aqui puedes buscar distintas reseñas sobre libros que quieras leer. Puedes buscar el nombre del libro que te interese. También puedes buscar reseñas de libros de un autor de tu agrado o que te gustaría comenzar a leer. Otra opción es buscar un género literario que te interese y te aparecerán distintas opciones de libros con sus respectivas reseñas.</p>
+            <section class="contenedor" id="books">
+            </section>
+            <p>&nbsp</p>
+            <h3>Los más destacados</h3>
+            <p class="texto-busca">Estas son las reseñas más populares de la última semana, pueden ser de tu interés</p>
+
+            <div class="contenedor">
+            
+                <div class="item">
+                    <img src="https://es.naufragia.com/wp-content/uploads/2021/04/71z7OGtw8wL-674x1024.jpg" alt="Imagen 1" class="imagen">
+                    <p class="texto">Stephen King</p>
+                </div>
+        
+                <div class="item">
+                    <img src="https://i.pinimg.com/originals/ab/ec/d5/abecd51b79366c089872d1e88e6c7424.jpg" alt="Imagen 2" class="imagen">
+                    <p class="texto">El Bosque Negro</p>
+                </div>
+        
+                <div class="item">
+                    <img src="https://marketplace.canva.com/EAFI171fL0M/1/0/1003w/canva-portada-de-libro-de-novela-ilustrado-color-azul-aqua-PQeWaiiK0aA.jpg" alt="Imagen 3" class="imagen">
+                    <p class="texto">Hasta que el verano se acabe</p>
+                </div>
+
+                <div class="item">
+                    <img src="https://th.bing.com/th/id/OIP.YAVUrxt62F3Xp01B69NQXgHaLg?w=552&h=858&rs=1&pid=ImgDetMain" alt="Imagen 3" class="imagen">
+                    <p class="texto">Grandes Esperanzas</p>
+                </div>
+
+                <div class="item">
+                    <img src="https://th.bing.com/th/id/OIP.gW3WQe47dfk5hLTobk5xKQAAAA?rs=1&pid=ImgDetMain" alt="Imagen 3" class="imagen">
+                    <p class="texto">Balada de pájaros cantores</p>
+                </div>
+
+                <div class="item">
+                    <img src="https://static-cse.canva.com/blob/439109/1024w-qIvQK6RTXxg.jpg" alt="Imagen 3" class="imagen">
+                    <p class="texto">El Quinto Infieno</p>
+                </div>
+
+                <div class="item">
+                    <img src="https://edicioneshispanicas.com/wp-content/uploads/9789586656672.jpg" alt="Imagen 3" class="imagen">
+                    <p class="texto">Mi Abandono</p>
+                </div>
+
+                <div class="item">
+                    <img src="https://i.pinimg.com/736x/76/6f/3d/766f3d034ffe6a13acfbe9394553c531--novel-cover-design-book-cover-designs.jpg" alt="Imagen 3" class="imagen">
+                    <p class="texto">A Teaspoon of Earth</p>
+                </div>
+               
+            </div>
+            <p>&nbsp</p>
+        </div>
+        <div class="item" id="PUBLICATURESEÑA">
+            
+            <div class="container-form">
+            <form action="/action_page.php" class="center-form">
+                <h2>Publica tu reseña</h2><br>
+                <input type="text" name="nombre" placeholder="nombre del libro"><br>
+                <input type="text" name="autor" placeholder="autor del libro"><br>
+                <input type="text" name="género" placeholder="género literario"><br>
+                <input type="text" name="opinión" placeholder="¿Cuál es tu opinión sobre el libro?"><br>
+                <p>¿Cuántas estrellas le das al libro?</p>
+                <select name="estrellas">
+                    <option value="1">1 estrella</option>
+                    <option value="2">2 estrellas</option>
+                    <option value="2">3 estrellas</option>
+                    <option value="4">4 estrellas</option>
+                    <option value="5">5 estrellas</option>
+                </select><br><br>
+                <input id="publicar" type="submit" value="submit"><br><br>
+            </form>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="proyecto.js"></script>
+</body>
+</html>
